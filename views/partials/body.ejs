@@ -1,0 +1,14 @@
+<% switch (pagina) {
+    case 'index' : %>
+            <h1> <%= title %> </h1>
+            <h1> <%= conten %> </h1>
+            <% break;
+    
+    case 'productos' : %>
+            <h1> Productos </h1>
+            <% include rec/productos %>
+            <% break;
+    
+    default: %>
+        <h1>Error</h1>
+<% } %>
