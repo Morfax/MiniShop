@@ -11,7 +11,7 @@ This program requires Node.js and Mongodb
 ### Local Installation
 In your terminal, run:
 ```
-git clone git@github.com:Morfax/test.git
+git clone git@github.com:Morfax/MiniShop.git
 cd test
 npm install
 ```
