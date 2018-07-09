@@ -9,7 +9,8 @@ router.get('/', function(req, res, next) {
     if (err) throw err;
     obj = JSON.parse(data);
     console.log(obj.page.menus);
-    res.render('index', { title: obj.page.title, conten: obj.page.conten, menus: obj.page.menus, pagina: "index" });
+    contenido = process.env.DB_HOST;
+    res.render('index', { title: obj.page.title, conten: contenido, menus: obj.page.menus, pagina: "index" });
   });
 });
 
