@@ -4,6 +4,18 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+var mongoose = require('mongoose');
+
+mongoose.Promise = global.Promise;
+
+mongoose.connect('mongodb://' + process.env.DB_HOST, { useNewUrlParser: true })
+.then(() => {
+    console.log("Successfully connected to the database");    
+}).catch(err => {
+    console.log('Could not connect to the database. ' + err);
+    process.exit();
+});
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 

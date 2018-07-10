@@ -13,5 +13,5 @@ In your terminal, run:
 ```
 git clone git@github.com:Morfax/MiniShop.git
 cd MiniShop
-npm install
+set DB_HOST=<dbuser>:<dbpassword>@r1.example.net:27017/dbname& npm start
 ```
