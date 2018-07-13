@@ -1,0 +1,13 @@
+{
+    "page": {
+        "title": "MiniShop",
+        "content": "Sistema para control de productos",
+        "menus": [{
+                "name": "Inicio",
+                "address":"/"
+            },{
+                "name": "Productos",
+                "address":"/productos"
+            }]
+    }
+}
