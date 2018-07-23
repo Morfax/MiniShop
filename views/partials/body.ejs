@@ -1,12 +1,23 @@
-<% switch (pagina) {
-    case 'index' : %>
-        <% include rec/index %>
-            <% break;
-    
-    case 'productos' : %>
-        <% include rec/productos %>
-            <% break;
-    
-    default: %>
-        <div class="col-12"><h1>Error 404</h1></div>
-<% } %>
+<br>
+<div class="container">
+    <% switch (pagina) {
+        case 'index' : %>
+            <% include rec/index %>
+                <% break;
+        
+        case 'productos' : %>
+            <% include rec/productos %>
+                <% break;
+
+        case 'productoslista' : %>
+            <% include rec/productoslista %>
+                <% break;
+
+        case 'productosagregar' : %>
+            <% include rec/productosagregar %>
+                <% break;
+
+        default: %>
+            <div class="col-12"><h1>Error 404</h1></div>
+    <% } %>
+</div>
