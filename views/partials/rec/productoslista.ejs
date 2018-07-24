@@ -1,7 +1,7 @@
 <ul class="list-group">
 <% productos.forEach(function(producto) { %>
     <li class="list-group-item">
-        <%= producto.name %> - $ <%= producto.cost %> 
+        <%= producto.name %> - $ <%= producto.cost %> <a class="btn btn-danger float-right" href="./borrar?tagId=<%= producto._id %>" role="button">Borrar</a>
     </li>
 <% }); %>
 </ul>

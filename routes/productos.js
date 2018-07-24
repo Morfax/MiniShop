@@ -35,4 +35,11 @@ router.post('/agregar', function(req, res, next) {
   });
 });
 
+router.get('/borrar', function(req, res, next) {
+  Producto.findByIdAndRemove(req.query.tagId, (err) => {  
+      if (err) return res.status(500).send(err);
+      res.redirect('./listas');
+  });
+});
+
 module.exports = router;
